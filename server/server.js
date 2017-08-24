@@ -18,52 +18,33 @@ app.start = function() {
 
     app.models.Note.create([
       {
-        key: getRandomString(3),
-        creator: 'test'
+        key: 'test'
       },
       {
-        key: getRandomString(3),
-        creator: 'test'
+        key: 'test'
       },
       {
-        key: getRandomString(3),
-        creator: 'test'
+        key: 'test'
       },
       {
-        key: getRandomString(3),
-        creator: 'test'
+        key: 'test'
       },
       {
-        key: getRandomString(3),
-        creator: 'test'
+        key: 'test'
       },
       {
-        key: getRandomString(3),
-        creator: 'test'
+        key: 'test'
       },
       {
-        key: getRandomString(3),
-        creator: 'test'
+        key: 'test'
       },
       {
-        key: getRandomString(3),
-        creator: 'test'
+        key: 'test'
       }
     ], (err, result) => {
       console.error(err);
       console.log(result);
     });
-
-    function getRandomString(length) {
-      let text = '';
-      let possible = 'abcdefghijklmnopqrstuvwxyz';
-
-      for (let i = 0; i < length; i++) {
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-      }
-
-      return text;
-    }
   });
 };
 

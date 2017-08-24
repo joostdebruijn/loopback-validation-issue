@@ -4,13 +4,6 @@
     "key": {
       "type": "string",
       "required": true
-    },
-    "content": {
-      "type": "string"
-    },
-    "creator": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],
